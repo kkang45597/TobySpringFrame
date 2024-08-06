@@ -1,0 +1,5 @@
+package com.mingi.springFrame.dao;
+
+public class UserDao {
+
+}

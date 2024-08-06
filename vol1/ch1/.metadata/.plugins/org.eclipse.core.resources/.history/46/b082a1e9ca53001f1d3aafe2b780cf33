@@ -1,0 +1,5 @@
+package com.mingi.springframe.dao;
+
+public class HConnectionMaker {
+
+}
