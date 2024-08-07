@@ -1,9 +1,18 @@
 package com.mingi.springframe.domain;
 
-public class User { // 엔티티 클래스 = 테이블
+public class User {
 	String id;
 	String name;
 	String password;
+	
+	public User() {
+	}
+	
+	public User(String id, String name, String password) { // springFrameProj_2.3.3Set에 추가되었습니다.
+		this.id = id;
+		this.name = name;
+		this.password = password;
+	}
 	
 	public String getId() {
 		return id;

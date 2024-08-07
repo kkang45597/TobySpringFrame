@@ -27,6 +27,15 @@
 			<version>5.10.2</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.10.2</version>
+			<scope>test</scope>
+		</dependency>
+
   
         <!-- 필요한 경우 종속성 추가 -->
         <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->

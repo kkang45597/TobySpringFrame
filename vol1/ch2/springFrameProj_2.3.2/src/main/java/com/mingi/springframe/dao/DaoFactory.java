@@ -8,14 +8,15 @@ import org.springframework.jdbc.datasource.SimpleDriverDataSource; // JDBCê°€ êµ
 
 @Configuration
 public class DaoFactory {
+	
 	@Bean
 	public DataSource dataSource() {
 		SimpleDriverDataSource dataSource = new SimpleDriverDataSource ();
 
-		dataSource.setDriverClass(com.mysql.jdbc.Driver.class);
-		dataSource.setUrl("jdbc:mysql://localhost/springbook?characterEncoding=UTF-8");
-		dataSource.setUsername("spring");
-		dataSource.setPassword("book");
+		dataSource.setDriverClass(com.mysql.cj.jdbc.Driver.class);
+		dataSource.setUrl("jdbc:mysql://localhost/sbdt_db?characterEncoding=UTF-8");
+		dataSource.setUsername("root");
+		dataSource.setPassword("1234");
 
 		return dataSource;
 	}

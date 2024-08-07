@@ -19,8 +19,7 @@ public class UserDao {
 	public void add(User user) throws SQLException {
 		Connection c = this.dataSource.getConnection();
 
-		PreparedStatement ps = c.prepareStatement(
-			"insert into users(id, name, password) values(?,?,?)");
+		PreparedStatement ps = c.prepareStatement("insert into users(id, name, password) values(?,?,?)");
 		ps.setString(1, user.getId());
 		ps.setString(2, user.getName());
 		ps.setString(3, user.getPassword());
@@ -33,8 +32,7 @@ public class UserDao {
 
 	public User get(String id) throws SQLException {
 		Connection c = this.dataSource.getConnection();
-		PreparedStatement ps = c
-				.prepareStatement("select * from users where id = ?");
+		PreparedStatement ps = c.prepareStatement("select * from users where id = ?");
 		ps.setString(1, id);
 
 		ResultSet rs = ps.executeQuery();
@@ -64,11 +62,13 @@ public class UserDao {
 	public int getCount() throws SQLException  {
 		Connection c = dataSource.getConnection();
 	
+		// users 테이블에 총 row 개수(정수 값)가 반환된다.
 		PreparedStatement ps = c.prepareStatement("select count(*) from users");
 
+		// 하나 이상의 result row 를 가질 수 있다. column 으로 구성
 		ResultSet rs = ps.executeQuery();
 		rs.next();
-		int count = rs.getInt(1);
+		int count = rs.getInt(1); // 첫 번째 컬럼의 값을 가져온다.
 
 		rs.close();
 		ps.close();
