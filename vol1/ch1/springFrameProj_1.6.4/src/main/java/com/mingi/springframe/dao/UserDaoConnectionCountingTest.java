@@ -22,6 +22,7 @@ public class UserDaoConnectionCountingTest {
 		}
 
 		CountingConnectionMaker ccm =  context.getBean("connectionMaker", CountingConnectionMaker.class);
+		
 		System.out.println("Connection counter : " + ccm.getCounter());		
 	}
 }

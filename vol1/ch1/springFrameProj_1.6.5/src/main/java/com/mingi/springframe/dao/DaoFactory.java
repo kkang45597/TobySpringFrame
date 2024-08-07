@@ -1,0 +1,21 @@
+package com.mingi.springframe.dao;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class DaoFactory {
+	@Bean
+	public UserDao userDao() {
+		
+		UserDao dao = new UserDao(); 
+		dao.setConnectionMaker(connectionMaker()); // 의존성 주입, 생성자 아큐먼트
+		return dao;
+	}
+
+	@Bean
+	public ConnectionMaker connectionMaker() {
+		ConnectionMaker connectionMaker = new MConnectionMaker();
+		return connectionMaker;
+	}
+}
