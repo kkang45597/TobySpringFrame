@@ -58,7 +58,7 @@ public class UserServiceFactory {
 		mailSenderImpl.setPort(587);
 		
 		mailSenderImpl.setUsername("kkang45597@gmail.com"); 
-		mailSenderImpl.setPassword("iodf mybw qhjg mcux");
+		mailSenderImpl.setPassword("iodfmybwqhjgmcux");
 		
 		return mailSenderImpl;
 	}
