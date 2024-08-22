@@ -49,7 +49,7 @@ public class UserService {
 		} finally {
 			DataSourceUtils.releaseConnection(c, dataSource);	
 			TransactionSynchronizationManager.unbindResource(this.dataSource);  
-			TransactionSynchronizationManager.clearSynchronization();  
+			TransactionSynchronizationManager.clearSynchronization(); // 동기화
 		}
 	}
 	
