@@ -1,0 +1,28 @@
+{
+  "sqlmap": [
+    {
+      "key": "userAdd",
+      "query": "insert into users(id, name, password, email, level, login, recommend) values(?,?,?,?,?,?,?)"
+    },
+    {
+      "key": "userGet",
+      "query": "select * from users where id = ?"
+    },
+    {
+      "key": "userGetAll",
+      "query": "select * from users order by id"
+    },
+    {
+      "key": "userDeleteAll",
+      "query": "delete from users"
+    },
+    {
+      "key": "userGetCount",
+      "query": "select count(*) from users"
+    },
+    {
+      "key": "userUpdate",
+      "query": "update users set name = ?, password = ?, email = ?, level = ?, login = ?, recommend = ? where id = ?"
+    }
+  ]
+}
