@@ -1,4 +1,4 @@
-# Toby Spring 3.1 Vo.1
+# Toby Spring 3.1 Vol.1
 ## 실습한 예제들
 [<B>[기술블로그: TobySpringFrame]</B>](https://blank001.tistory.com/category/Toby%20Spring%203.1)
 
