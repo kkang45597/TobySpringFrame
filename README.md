@@ -1,6 +1,6 @@
 # Toby Spring 3.1 Vo.1
 ## 실습한 예제들
-[<B>[기술블로그: TobySpringFrame]</B>](https://xn--blank001-rd5a.tistory.com/category/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)
+[<B>[기술블로그: TobySpringFrame]</B>](https://blank001.tistory.com/category/%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)
 
 ### 1장, 오브젝트와 의존관계
 - SpringFrameProj1-1-2: DAO
