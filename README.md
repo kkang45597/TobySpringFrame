@@ -1,5 +1,7 @@
 # Toby Spring 3.1 Vol.1
 ## 실습한 예제들
+교재로는 3.1을 사용하였지만, 실제로 사용한 버전은 스프링 프레임워크 3.3.5입니다. 또한 Junit에서 Junit5로 변경하였습니다.</br>
+
 [<B>[기술블로그: TobySpringFrame]</B>](https://blank001.tistory.com/category/Toby%20Spring%203.1)
 
 ### 1장, 오브젝트와 의존관계
